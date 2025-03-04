@@ -37,7 +37,34 @@ def number_to_full_month_name(month_num):
     date_time_string = date_time_object.strftime( "%B")
     return date_time_string
 
+# Class solution
+# def test_number_to_full_name_month_1(self):
+#     result = number_to_full_month_name ( 1 )
+#     self.assertEqual( "January", result )
+
+# def test_number_to_full_name_month_3(self):
+#     result = number_to_full_month_name ( 3 )
+#     self.assertEqual( "March", result )
+
 def number_to_short_month_name(month_num):
     date_time_object = datetime.strptime(str(month_num), "%m")
     date_time_string = date_time_object.strftime( "%b")
     return date_time_string
+
+# Class Solution
+# def test_number_to_short_month_name_month(self):
+#     first_month_string = number_to_short_month_name ( 1 )
+#     self.assertEqual ("Jan", first_month_string)
+
+#  Further
+
+def volume_of_cube(length_of_side):
+    return length_of_side **3
+
+
+def reverse_string(str):
+    return str[::-1]
+
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
